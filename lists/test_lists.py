@@ -2,7 +2,6 @@ import unittest
 import sys
 
 sys.path.append(".")
-print(sys.path)
 import sample as lists
 
 
@@ -363,6 +362,11 @@ class TestLists(unittest.TestCase):
 
         actual = self.get_car_years(self.inventory)
         self.assertCountEqual(actual, expected)
+
+    def test_get_old_cars(self):
+        expected = 25
+        actual = self.get_old_cars(self.inventory)
+        self.assertEqual(expected, actual)
 
 
 if __name__ == "__main__":
