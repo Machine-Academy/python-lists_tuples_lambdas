@@ -1,5 +1,5 @@
 import unittest
-import lambdas
+import lambdas.lambdas as lambdas
 
 
 class TestLambdas(unittest.TestCase):
@@ -33,4 +33,7 @@ class TestLambdas(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    # unittest.main()
+    import sys
+
+    print(sys.path)
