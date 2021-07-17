@@ -168,4 +168,7 @@ def find_bmw_and_audi(cars_list):
 
 # === STRETCH ====
 # see if you can refactor your functions to use the
-# **map** funciton and list comprehension where possible
+# **map** function and list comprehension where possible
+
+if __name__ == "__main__":
+    main()

@@ -1,8 +1,5 @@
 import unittest
-import sys
-
-sys.path.append(".")
-import sample as lists
+import lists
 
 
 class TestLists(unittest.TestCase):
@@ -367,6 +364,23 @@ class TestLists(unittest.TestCase):
         expected = 25
         actual = self.get_old_cars(self.inventory)
         self.assertEqual(expected, actual)
+
+    def test_find_bmw_and_audi(self):
+        expected = [
+            {
+                "id": 8,
+                "car_make": "Audi",
+                "car_model": "4000CS Quattro",
+                "car_year": 1987,
+            },
+            {"id": 25, "car_make": "BMW", "car_model": "525", "car_year": 2005},
+            {"id": 30, "car_make": "BMW", "car_model": "6 Series", "car_year": 2010},
+            {"id": 44, "car_make": "Audi", "car_model": "Q7", "car_year": 2012},
+            {"id": 45, "car_make": "Audi", "car_model": "TT", "car_year": 2008},
+        ]
+
+        actual = self.find_bmw_and_audi(self.inventory)
+        self.assertCountEqual(expected, actual)
 
 
 if __name__ == "__main__":
