@@ -1,6 +1,4 @@
-# convert the functions below into Lambda / Anonymous functions
-
-
+# === DO NOT TOUCH ===
 def main():
 
     myFunction()
@@ -19,6 +17,9 @@ def main():
     print(list(nums_trippled))
 
 
+# ==============================================================
+# convert the functions below into Lambda / Anonymous functions
+# ==============================================================
 def myFunction():
     print("My function was ran!")
 
