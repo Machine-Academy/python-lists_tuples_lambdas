@@ -22,6 +22,10 @@ Excercises are in...
 
 Inorder to complete the problems you will need to use loops, conditional logic and other mechanisms that you see fit. You will also learn how to convert normal functions into Lambda functoins. Lambdas are used in functions like `map, sort, filter and reduce` to name a few.
 
+> **NOTE**
+>
+> Suggested order to complete **Tuples, Lambdas, Lists**
+
 ## Instruction
 
 * [ ] Please fork and clone this repository. Regularly commit and push your code as appropriate.
