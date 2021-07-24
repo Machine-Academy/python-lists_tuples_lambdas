@@ -11,7 +11,8 @@ class TestLists(unittest.TestCase):
                 "car_model": "Navigator",
                 "car_year": 2009,
             },
-            {"id": 2, "car_make": "Mazda", "car_model": "Miata MX-5", "car_year": 2001},
+            {"id": 2, "car_make": "Mazda",
+                "car_model": "Miata MX-5", "car_year": 2001},
             {
                 "id": 3,
                 "car_make": "Land Rover",
@@ -42,7 +43,8 @@ class TestLists(unittest.TestCase):
             },
             {"id": 11, "car_make": "Infiniti", "car_model": "G35", "car_year": 2004},
             {"id": 12, "car_make": "Lotus", "car_model": "Esprit", "car_year": 2004},
-            {"id": 13, "car_make": "Chevro", "car_model": "Cavalier", "car_year": 1997},
+            {"id": 13, "car_make": "Chevro",
+                "car_model": "Cavalier", "car_year": 1997},
             {
                 "id": 14,
                 "car_make": "Dodge",
@@ -83,7 +85,8 @@ class TestLists(unittest.TestCase):
             },
             {"id": 27, "car_make": "Infiniti", "car_model": "Q", "car_year": 2000},
             {"id": 28, "car_make": "Suzuki", "car_model": "Aerio", "car_year": 2005},
-            {"id": 29, "car_make": "Mercury", "car_model": "Topaz", "car_year": 1993},
+            {"id": 29, "car_make": "Mercury",
+                "car_model": "Topaz", "car_year": 1993},
             {"id": 30, "car_make": "BMW", "car_model": "6 Series", "car_year": 2010},
             {"id": 31, "car_make": "Pontiac", "car_model": "GTO", "car_year": 1964},
             {
@@ -94,9 +97,11 @@ class TestLists(unittest.TestCase):
             },
             {"id": 33, "car_make": "Jeep", "car_model": "Wrangler", "car_year": 2011},
             {"id": 34, "car_make": "Ford", "car_model": "Escort", "car_year": 1991},
-            {"id": 35, "car_make": "Chrysler", "car_model": "300M", "car_year": 2000},
+            {"id": 35, "car_make": "Chrysler",
+                "car_model": "300M", "car_year": 2000},
             {"id": 36, "car_make": "Volvo", "car_model": "XC70", "car_year": 2003},
-            {"id": 37, "car_make": "Oldsmobile", "car_model": "LSS", "car_year": 1997},
+            {"id": 37, "car_make": "Oldsmobile",
+                "car_model": "LSS", "car_year": 1997},
             {"id": 38, "car_make": "Toyota", "car_model": "Camry", "car_year": 1992},
             {
                 "id": 39,
@@ -163,7 +168,8 @@ class TestLists(unittest.TestCase):
     def test_sort_cars(self):
 
         expected = [
-            {"id": 35, "car_make": "Chrysler", "car_model": "300M", "car_year": 2000},
+            {"id": 35, "car_make": "Chrysler",
+                "car_model": "300M", "car_year": 2000},
             {
                 "id": 8,
                 "car_make": "Audi",
@@ -182,7 +188,8 @@ class TestLists(unittest.TestCase):
                 "car_year": 1994,
             },
             {"id": 38, "car_make": "Toyota", "car_model": "Camry", "car_year": 1992},
-            {"id": 13, "car_make": "Chevro", "car_model": "Cavalier", "car_year": 1997},
+            {"id": 13, "car_make": "Chevro",
+                "car_model": "Cavalier", "car_year": 1997},
             {
                 "id": 46,
                 "car_make": "Oldsmobile",
@@ -239,10 +246,12 @@ class TestLists(unittest.TestCase):
                 "car_model": "Jetta",
                 "car_year": 2007,
             },
-            {"id": 37, "car_make": "Oldsmobile", "car_model": "LSS", "car_year": 1997},
+            {"id": 37, "car_make": "Oldsmobile",
+                "car_model": "LSS", "car_year": 1997},
             {"id": 24, "car_make": "Toyota", "car_model": "MR2", "car_year": 2003},
             {"id": 48, "car_make": "Dodge", "car_model": "Magnum", "car_year": 2008},
-            {"id": 2, "car_make": "Mazda", "car_model": "Miata MX-5", "car_year": 2001},
+            {"id": 2, "car_make": "Mazda",
+                "car_model": "Miata MX-5", "car_year": 2001},
             {
                 "id": 16,
                 "car_make": "Mitsubishi",
@@ -286,7 +295,8 @@ class TestLists(unittest.TestCase):
             {"id": 17, "car_make": "Buick", "car_model": "Skylark", "car_year": 1987},
             {"id": 45, "car_make": "Audi", "car_model": "TT", "car_year": 2008},
             {"id": 23, "car_make": "Eagle", "car_model": "Talon", "car_year": 1992},
-            {"id": 29, "car_make": "Mercury", "car_model": "Topaz", "car_year": 1993},
+            {"id": 29, "car_make": "Mercury",
+                "car_model": "Topaz", "car_year": 1993},
             {
                 "id": 50,
                 "car_make": "Lincoln",
@@ -362,7 +372,7 @@ class TestLists(unittest.TestCase):
 
     def test_get_old_cars(self):
         expected = 25
-        actual = self.get_old_cars(self.inventory)
+        actual = len(self.get_old_cars(self.inventory))
         self.assertEqual(expected, actual)
 
     def test_find_bmw_and_audi(self):
