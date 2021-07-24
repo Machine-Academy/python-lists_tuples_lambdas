@@ -33,9 +33,11 @@ def main():
         },
         {"id": 17, "car_make": "Buick", "car_model": "Skylark", "car_year": 1987},
         {"id": 18, "car_make": "Geo", "car_model": "Prizm", "car_year": 1995},
-        {"id": 19, "car_make": "Oldsmobile", "car_model": "Bravada", "car_year": 1994},
+        {"id": 19, "car_make": "Oldsmobile",
+            "car_model": "Bravada", "car_year": 1994},
         {"id": 20, "car_make": "Mazda", "car_model": "Familia", "car_year": 1985},
-        {"id": 21, "car_make": "Chevro", "car_model": "Express 1500", "car_year": 2003},
+        {"id": 21, "car_make": "Chevro",
+            "car_model": "Express 1500", "car_year": 2003},
         {"id": 22, "car_make": "Jeep", "car_model": "Wrangler", "car_year": 1997},
         {"id": 23, "car_make": "Eagle", "car_model": "Talon", "car_year": 1992},
         {"id": 24, "car_make": "Toyota", "car_model": "MR2", "car_year": 2003},
@@ -92,12 +94,13 @@ def main():
 
     print("\n=== Challenege 5 ===")
     old_cars = get_old_cars(inventory)
-    print(f"Number of cars maded before 2000: {len(old_cars)}")
+    print(f"Number of cars maded before 2000: {old_cars}")
 
     print("\n=== Challenge 6 ===")
     cars = find_bmw_and_audi(inventory)
     for car in cars:
-        print("Car Make: {}, Car Model: {}".format(car["car_make"], car["model"]))
+        print("Car Make: {}, Car Model: {}".format(
+            car["car_make"], car["model"]))
 
 
 # Example 1 for loop:
